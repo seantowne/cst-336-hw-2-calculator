@@ -8,7 +8,5 @@ function handle_button_click(button){
 }
 
 $("#eval").on("click", function(){
-    alert($(this).val())
-    console.log("hello")
     handle_button_click($(this));
 })
