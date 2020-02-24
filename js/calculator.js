@@ -14,7 +14,7 @@ function evaluate_expression(){
             }
             r = result.split('"')[1];
             $("#expression").val(r);
-        }
+        },
         error: function(status, error){
             $("#expression").val("error");
         }
