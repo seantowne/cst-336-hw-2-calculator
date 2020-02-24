@@ -21,6 +21,9 @@ function handle_button_click(butt){
     if ( button.id == "eval" ){
         evaluate_expression();
     }
+    if ( button.id == "clear" ){
+        $("#expression").val("");
+    }
     append_expression(button.value);
 }
 
