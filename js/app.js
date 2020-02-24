@@ -3,8 +3,10 @@ function enter_button_was_clicked(){
     alert("enter was clicked");
 }
 
-function handle_button_click(){
-    alert(this.val());
+function handle_button_click(button){
+    alert(button.val());
 }
 
-$("#=").on("click", handle_button_click())
+$("#=").on("click", function(){
+    handle_button_click($(this));
+})
