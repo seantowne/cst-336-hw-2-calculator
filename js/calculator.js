@@ -1,7 +1,7 @@
 
 $.ajax({
    method: "GET",
-   url: "https://cst-336-hw-2-calculator.herokuapp.com/evaluate/",
+   url: "https://cst-336-hw-2-calculator.herokuapp.com/evaluate/?",
    dataType: "json",
    data: "1+1",
    success: function(result, status){
