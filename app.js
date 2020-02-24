@@ -7,7 +7,7 @@ const port = process.env.PORT || 8080;
 
 app.use(express.static(__dirname));
 app.get('/', (req, res) => res.sendFile(path.join(__dirname + '/index.html')));
-app.get('/evaluate/?:expression', function(req, res){
+app.get('/:expression', function(req, res){
     var expression = req.params.expression;
     
     res.send(fcal.evaluate(expression));
