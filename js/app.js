@@ -8,6 +8,8 @@ function handle_button_click(button){
 }
 
 $(":button").each(function(index, value){
-    $(this).on("click", handle_button_click($(this)));
+    $(this).on("click", function(){
+        handle_button_click($(this));
+    });
 })
 
