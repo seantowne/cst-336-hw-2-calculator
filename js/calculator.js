@@ -18,8 +18,9 @@ function append_expression(value){
 
 function handle_button_click(butt){
     var button = butt[0];
-    console.log(button.id);
-    console.log(button.value);
+    if ( button.id == "eval" ){
+        evaluate_expression();
+    }
     append_expression(button.value);
 }
 
