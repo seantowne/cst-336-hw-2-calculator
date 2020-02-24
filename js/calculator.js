@@ -1,6 +1,16 @@
-const { Fcal } = require('fcal');
-const fcal = new Fcal();
-alert(fcal.evaluate("1+1"));
+
+$.ajax({
+   method: "GET",
+   url: "https://cst-336-hw-2-calculator.herokuapp.com/evaluate/",
+   dataType: "json",
+   data: "1+1",
+   success: function(result, status){
+       console.log(result);
+   }
+});
+
+
+
 function enter_button_was_clicked(){
     alert("enter was clicked");
 }
