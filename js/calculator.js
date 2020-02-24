@@ -9,7 +9,8 @@ function evaluate_expression(){
         success: function(result, status){
             console.log(status);
             console.log(result);
-            $("#expression").val(result);
+            r = result.split('"')[1];
+            $("#expression").val(r);
         }
     });
 }
