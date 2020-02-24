@@ -12,7 +12,7 @@ app.get('/', (req, res) => res.sendFile(path.join(__dirname + '/index.html')));
 app.get('/evaluate/', function(req, res){
     var expression = req.query.expression;
     
-    res.send(expression);
+    res.send(fcal.evaluate(expression));
 });
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
