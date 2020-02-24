@@ -4,7 +4,10 @@ function enter_button_was_clicked(){
 }
 
 function handle_button_click(button){
-    alert("hello");
+    alert(button.val());
 }
 
-$(":button").on("click", handle_button_click($(this)) );
+for ( var b in $(":button") ){
+    b.on("click", handle_button_click(b) );
+}
+
