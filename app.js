@@ -10,7 +10,7 @@ app.get('/', (req, res) => res.sendFile(path.join(__dirname + '/index.html')));
 app.get('/:expression', function(req, res){
     var expression = req.params.expression;
     
-    res.send(req.params);
+    res.send(req.params.expression);
 });
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
