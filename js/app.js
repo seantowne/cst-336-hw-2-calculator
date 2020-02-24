@@ -7,4 +7,4 @@ function handle_button_click(button){
     alert("hello");
 }
 
-$(":button").on("click", handle_button_click);
+$(":button").on("click", handle_button_click($(this)) );
