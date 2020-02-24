@@ -1,4 +1,6 @@
+const { Fcal } = require('fcal');
 const fcal = new Fcal();
+alert(fcal.evaluate("1+1"));
 function enter_button_was_clicked(){
     alert("enter was clicked");
 }
