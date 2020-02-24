@@ -42,5 +42,10 @@ $(":button").each(function(index, value){
     $(this).on("click", function(){
         handle_button_click($(this));
     });
-})
+});
 
+$('#expression').keypress(function(event){
+    if(event.keyCode == '13'){
+        evaluate_expression();
+    }
+});
