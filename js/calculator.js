@@ -16,11 +16,10 @@ function append_expression(value){
     $("#expression").val($("#expression").val()+value);
 }
 
-function handle_button_click(button){
-    console.log(button[0].id);
-    if ( button.id == "one" ){
-        append_expression("1");
-    }
+function handle_button_click(butt){
+    var button = butt[0];
+    
+    append_expression(button.val);
 }
 
 $(":button").each(function(index, value){
