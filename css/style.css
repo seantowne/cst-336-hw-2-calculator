@@ -7,3 +7,7 @@
     border: 2px solid blue;
     border-radius: 20px;
 }
+
+#expression{
+    text-align: right;
+}
