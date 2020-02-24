@@ -6,7 +6,7 @@ function enter_button_was_clicked(){
 function handle_button_click(button){
     alert(button.val());
 }
-alert("wtf");
+alert("");
 $("#=").on("click", function(){
     alert($(this).val())
     handle_button_click($(this));
