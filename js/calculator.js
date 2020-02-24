@@ -17,7 +17,7 @@ function append_expression(value){
 }
 
 function handle_button_click(button){
-    console.log($(this).id);
+    console.log(button[0].id);
     if ( button.id == "one" ){
         append_expression("1");
     }
