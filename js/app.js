@@ -8,5 +8,6 @@ function handle_button_click(button){
 }
 
 $("#=").on("click", function(){
+    alert($(this).val())
     handle_button_click($(this));
 })
