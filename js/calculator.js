@@ -18,8 +18,9 @@ function append_expression(value){
 
 function handle_button_click(butt){
     var button = butt[0];
-    
-    append_expression(button.val());
+    console.log(button.id);
+    console.log(button.value);
+    append_expression(button.value);
 }
 
 $(":button").each(function(index, value){
