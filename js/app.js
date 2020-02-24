@@ -7,8 +7,4 @@ function handle_button_click(button){
     alert(button.val());
 }
 
-
-
-for ( var b in $(":button") ){
-    b.on("click", function(){ handle_button_click(b); });
-}
+$(":button").on("click", handle_button_click($(this)));
