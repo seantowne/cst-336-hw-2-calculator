@@ -8,7 +8,7 @@ function evaluate_expression(){
         data: {"expression":$("#expression").val()},
         success: function(result, status){
             console.log(result);
-            $("#expression").val(parseInt(result));
+            $("#expression").val(parseFloat(result));
         }
     });
 }
