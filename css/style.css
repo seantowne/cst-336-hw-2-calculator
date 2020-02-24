@@ -23,4 +23,6 @@ h3{
 p{
     text-align: center;
     width: 550px;
+    display: block;
+    margin: auto;
 }
