@@ -20,9 +20,11 @@ function handle_button_click(butt){
     var button = butt[0];
     if ( button.id == "eval" ){
         evaluate_expression();
+        return;
     }
     if ( button.id == "clear" ){
         $("#expression").val("");
+        return;
     }
     append_expression(button.value);
 }
