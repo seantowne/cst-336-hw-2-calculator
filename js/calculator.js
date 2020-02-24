@@ -7,8 +7,10 @@ function evaluate_expression(){
         dataType: "text",
         data: {"expression":$("#expression").val()},
         success: function(result, status){
-            console.log(status);
-            console.log(result);
+            if ( status != "success" ){
+                $("#expression").val("error");
+                return;
+            }
             r = result.split('"')[1];
             $("#expression").val(r);
         }
