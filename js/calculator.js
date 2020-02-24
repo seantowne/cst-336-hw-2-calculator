@@ -12,9 +12,13 @@ function evaluate_expression(){
     });
 }
 
+function append_expression(value){
+    $("#expression").val($("#expression").val()+value);
+}
+
 function handle_button_click(button){
     if ( button.id == "one" ){
-        $("#expression").val().append("1");
+        append_expression("1");
     }
 }
 
