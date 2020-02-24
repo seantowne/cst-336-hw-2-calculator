@@ -7,7 +7,7 @@ function evaluate_expression(){
         dataType: "text",
         data: {"expression":$("#expression").val()},
         success: function(result, status){
-            if ( !result ){
+            if ( !result || result.length == 0){
                 $("#expression").val("error");
                 return;
             }
@@ -23,7 +23,7 @@ function append_expression(value){
 
 function handle_button_click(butt){
     var button = butt[0];
-    if ( button.id == "eval" ){
+    if ( button.id == "eval"){
         evaluate_expression();
         return;
     }
