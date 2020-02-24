@@ -10,7 +10,7 @@ console.log("test 1 2");
 app.use(express.static(__dirname));
 app.get('/', (req, res) => res.sendFile(path.join(__dirname + '/index.html')));
 app.get('/evaluate', function(req, res){
-    var expression = req.params.expression;
+    var expression = req.expression;
     
     res.send(expression);
 });
