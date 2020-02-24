@@ -5,7 +5,7 @@ $.ajax({
    dataType: "text",
    data: {"expression":"cos(0)"},
    success: function(result, status){
-       console.log(result);
+       console.log(result.n);
    }
 });
 
