@@ -1,9 +1,9 @@
 
 $.ajax({
    method: "GET",
-   url: "https://cst-336-hw-2-calculator.herokuapp.com",
+   url: "https://cst-336-hw-2-calculator.herokuapp.com/evaluate",
    dataType: "text",
-   data: "1+1",
+   data: { "expression":"1+1"},
    success: function(result, status){
        console.log(result);
    }
